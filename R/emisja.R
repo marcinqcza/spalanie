@@ -45,6 +45,6 @@ emisja<- function(data = input,
     ) %>%
     select(Category, Fuel, Euro.Standard, Technology, Pollutant, Mode, Segment, Nat, Emisja)
 
-  return(data)
+  return(out)
 
 }

@@ -13,4 +13,6 @@ Imports:
     base,
     stats,
     dplyr,
-    magrittr
+    magrittr,
+    ggplot2,
+    rlang

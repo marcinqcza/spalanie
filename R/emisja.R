@@ -1,3 +1,5 @@
+
+
 emisja<- function(data = input,
                   kategoria = "Passenger Cars",
                   paliwo = "Petrol Hybrid",

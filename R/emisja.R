@@ -1,4 +1,16 @@
-
+#' Obliczenia emisji spalin
+#'
+#' @param dane dataframe
+#' @param kategoria character
+#' @param euro character
+#' @param mode character
+#' @param substancja character
+#'
+#' @return
+#' @import dplyr tidyverse ggplot2 magrittr
+#' @export
+#'
+#' @examples
 
 emisja<- function(data = dane_wej,
                   kategoria = "Passenger Cars",

@@ -1,6 +1,6 @@
 
 
-emisja<- function(data = input,
+emisja<- function(data = dane_wej,
                   kategoria = "Passenger Cars",
                   paliwo = "Petrol Hybrid",
                   typ = "Small",
@@ -12,36 +12,36 @@ emisja<- function(data = input,
   #data <- openxlsx::read.xlsx(xlsxFile = path)
 
   if(!is.null(kategoria)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Category %in% kategoria)
   }
 
   if(!is.null(paliwo)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Fuel %in% paliwo)
   }
 
   if(!is.null(typ)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Segment %in% typ)
   }
 
   if(!is.null(stan)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Euro.Standard %in% stan)
   }
 
   if(!is.null(tech)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Technology %in% tech)
   }
 
   if(!is.null(sub)) {
-    out <- wskazniki %>%
+    out <- dane_wej %>%
       filter(Pollutant %in% sub)
   }
 
-  out <- wskazniki %>%
+  out <- dane_wej %>%
     mutate(Emisja = Nat * ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))/
                              (Epsilon * Procent ^ 2 + Zita * Procent + Hta) * (1-Reduction))
     ) %>%

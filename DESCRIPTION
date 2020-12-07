@@ -16,3 +16,4 @@ Imports:
     magrittr,
     ggplot2,
     rlang
+RoxygenNote: 7.1.1

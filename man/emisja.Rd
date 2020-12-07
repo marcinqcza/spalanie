@@ -5,7 +5,7 @@
 \title{Obliczenia emisji spalin}
 \usage{
 emisja(
-  data = dane_wej,
+  dane = dane_wej,
   kategoria = "Passenger Cars",
   paliwo = "Petrol Hybrid",
   typ = "Small",
@@ -15,15 +15,19 @@ emisja(
 )
 }
 \arguments{
-\item{kategoria}{character}
-
 \item{dane}{dataframe}
 
-\item{euro}{character}
+\item{kategoria}{character}
 
-\item{mode}{character}
+\item{paliwo}{character}
 
-\item{substancja}{character}
+\item{typ}{character}
+
+\item{stan}{character}
+
+\item{tech}{character}
+
+\item{sub}{character}
 }
 \value{
 

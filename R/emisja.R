@@ -2,9 +2,11 @@
 #'
 #' @param dane dataframe
 #' @param kategoria character
-#' @param euro character
-#' @param mode character
-#' @param substancja character
+#' @param paliwo character
+#' @param typ character
+#' @param stan character
+#' @param tech character
+#' @param sub character
 #'
 #' @return
 #' @import dplyr tidyverse ggplot2 magrittr
@@ -12,7 +14,7 @@
 #'
 #' @examples
 
-emisja<- function(data = dane_wej,
+emisja<- function(dane = dane_wej,
                   kategoria = "Passenger Cars",
                   paliwo = "Petrol Hybrid",
                   typ = "Small",

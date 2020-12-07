@@ -5,7 +5,7 @@
 \title{Obliczenia emisji spalin}
 \usage{
 emisja(
-  dane = dane_wej,
+  dane = input,
   kategoria = "Passenger Cars",
   paliwo = "Petrol Hybrid",
   typ = "Small",

@@ -16,29 +16,29 @@
 
 emisja<- function(dane = input,
                   kategoria = "Passenger Cars",
-                  paliwo = "Petrol Hybrid",
+                  paliwo = "Petrol",
                   typ = "Small",
                   stan = "Euro 4",
                   tech = "PFI",
                   sub = "CH4"
 ){
 
+  out <- wskazniki %>%
+    filter(Category %in% kategoria)%>%
+    filter(Fuel %in% paliwo)%>%
+    filter(Segment %in% typ)%>%
+    filter(Euro.Standard %in% stan)%>%
+    filter(Technology %in% tech)%>%
+    filter(Pollutant %in% sub)
 
-    out <- wskazniki %>%
-      filter(Category %in% kategoria)%>%
-      filter(Fuel %in% paliwo)%>%
-      filter(Segment %in% typ)%>%
-      filter(Segment %in% typ)%>%
-      filter(Euro.Standard %in% stan)%>%
-      filter(Technology %in% tech)%>%
-      filter(Pollutant %in% sub)
 
+  out$Nat <- rnorm(nrow(out), mean = 100, sd = 50)
 
   out <- out %>%
-    mutate(Emisja = Nat * ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))/
+    mutate(Emisja = Nat* ((Alpha * Procent ^ 2 + Beta * Procent + Gamma + (Delta/Procent))/
                              (Epsilon * Procent ^ 2 + Zita * Procent + Hta) * (1-Reduction))
     ) %>%
-    select(Category, Fuel, Euro.Standard, Technology, Pollutant, Mode, Segment, Nat, Emisja)
+    select(Category, Fuel, Segment, Euro.Standard, Technology, Pollutant, Mode,Nat, Emisja)
 
   return(out)
 

@@ -17,8 +17,6 @@ input
 Plik do wczytywania danych zewnetrznych potrzebnych do dzialania pakietu
 }
 \examples{
-\dontrun{
-dane_wej
-}
+\dontrun
 }
 \keyword{datasets}

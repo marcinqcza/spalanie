@@ -7,7 +7,7 @@
 emisja(
   dane = input,
   kategoria = "Passenger Cars",
-  paliwo = "Petrol Hybrid",
+  paliwo = "Petrol",
   typ = "Small",
   stan = "Euro 4",
   tech = "PFI",

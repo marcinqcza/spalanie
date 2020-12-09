@@ -7,21 +7,19 @@
 #' @param stan character
 #' @param tech character
 #' @param sub character
-#'
 #' @return
 #' @import dplyr tidyverse ggplot2 magrittr
 #' @export
-#'
 #' @examples
 
 emisja<- function(dane = input,
                   kategoria = "Passenger Cars",
-                  paliwo = "Petrol",
-                  typ = "Small",
+                  paliwo = (c("Petrol","Petrol Hybrid","Diesel")),
+                  typ = (c("Small","Mini")),
                   stan = "Euro 4",
-                  tech = "PFI",
-                  sub = "CH4"
-){
+                  tech = (c("PFI","DPF")),
+                  sub = "CH4")
+  {
 
   out <- wskazniki %>%
     filter(Category %in% kategoria)%>%
@@ -31,7 +29,6 @@ emisja<- function(dane = input,
     filter(Technology %in% tech)%>%
     filter(Pollutant %in% sub)
 
-
   out$Nat <- rnorm(nrow(out), mean = 100, sd = 50)
 
   out <- out %>%
@@ -39,6 +36,8 @@ emisja<- function(dane = input,
                              (Epsilon * Procent ^ 2 + Zita * Procent + Hta) * (1-Reduction))
     ) %>%
     select(Category, Fuel, Segment, Euro.Standard, Technology, Pollutant, Mode,Nat, Emisja)
+
+  out <<- out
 
   return(out)
 

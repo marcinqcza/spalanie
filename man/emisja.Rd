@@ -7,10 +7,10 @@
 emisja(
   dane = input,
   kategoria = "Passenger Cars",
-  paliwo = "Petrol",
-  typ = "Small",
+  paliwo = (c("Petrol", "Petrol Hybrid", "Diesel")),
+  typ = (c("Small", "Mini")),
   stan = "Euro 4",
-  tech = "PFI",
+  tech = (c("PFI", "DPF")),
   sub = "CH4"
 )
 }

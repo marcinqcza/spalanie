@@ -3,11 +3,13 @@ title: "Wprowadzenie do 'emisja' spalin"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Wprowadzenie do emisja spalin}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
-```{r, include = FALSE}
+```{r echo=FALSE}
 knitr::opts_chunk$set(
   comment = "#>", 
   echo = T, 
@@ -16,8 +18,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(spalanie)
+```{r dodatkowe ustawienia, eval=FALSE, include=FALSE, results='hide'}
+#library(spalanie)
 ```
 
 ***
@@ -43,6 +45,7 @@ library(spalanie)
 Zwiazku z tym ze repozytorium pakietu znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet `devtools`, który pobierze repozyroriu `emisja` i zainstaluje pakiet na twoim komputerze.
 
 ```{r setup, eval=FALSE}
+knitr::opts_chunk$set(eval = FALSE, include = FALSE)
 # instalacja potrzebnego pakietu devtools
 if(!require(devtools)) {install.packages("devtools"); require(devtools)}
 # instalacja pakietu emisja

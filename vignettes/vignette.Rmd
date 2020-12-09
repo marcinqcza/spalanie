@@ -1,20 +1,16 @@
 ---
-title: "Wprowadzenie do 'emisja' spalin"
+title: "Wprowadzenie do emisja spalin"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Wprowadzenie do emisja spalin}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  chunk_output_type: console
 ---
 
-```{r echo=FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
-  comment = "#>", 
-  echo = T, 
-  message = F, 
-  warning = F
+  collapse = TRUE,
+  comment = "#>"
 )
 ```
 
@@ -35,14 +31,11 @@ knitr::opts_chunk$set(
 ***
 
 
-
-
-
 ***
 # Instalacja pakietu
 ***
 
-Zwiazku z tym ze repozytorium pakietu znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet `devtools`, który pobierze repozyroriu `emisja` i zainstaluje pakiet na twoim komputerze.
+Zwiazku z tym ze repozytorium pakietu znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet devtools, który pobierze repozyroriu emisja i zainstaluje pakiet na twoim komputerze.
 
 ```{r setup, eval=FALSE}
 knitr::opts_chunk$set(eval = FALSE, include = FALSE)

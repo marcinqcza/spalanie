@@ -1,3 +1,16 @@
+#' Wizualizacja danych - wykres
+#'
+#'
+#' @return plot
+#' @param x double
+#' @param y double
+#' @param z double
+#' @param out double
+#' @import dplyr tidyverse ggplot2 magrittr
+#' @export
+#'
+#' @examples
+
 wykres <- function(out,x,y,z) {
 
   x <- enquo(x)

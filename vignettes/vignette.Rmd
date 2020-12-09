@@ -1,0 +1,55 @@
+---
+title: "Wprowadzenie do 'emisja' spalin"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Wprowadzenie do emisja spalin}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>", 
+  echo = T, 
+  message = F, 
+  warning = F
+)
+```
+
+```{r setup}
+library(spalanie)
+```
+
+***
+
+**Marcin Kucza**
+
+**AGH** Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, Wydział Geodezji Górniczej i Inżynierii Środowiska, Geoinformacja, III rok.
+
+**e-mail:** *[marcinqcza@student.agh.edu.pl](marcinqcza@student.agh.edu.pl)*.
+
+***
+# Wprowadzenia
+***
+
+
+
+
+
+***
+# Instalacja pakietu
+***
+
+Zwiazku z tym ze repozytorium pakietu znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet `devtools`, który pobierze repozyroriu `emisja` i zainstaluje pakiet na twoim komputerze.
+
+```{r setup, eval=FALSE}
+# instalacja potrzebnego pakietu devtools
+if(!require(devtools)) {install.packages("devtools"); require(devtools)}
+# instalacja pakietu emisja
+devtools::install_github("")
+library(emisja)
+```
+
+***
+# Wizualizacja obliczonych wyników
+***

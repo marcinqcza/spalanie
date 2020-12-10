@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r dodatkowe ustawienia, eval=FALSE, include=FALSE, results='hide'}
+```{r dodatkowe ustawienia, include=FALSE, results='hide'}
 #library(spalanie)
 ```
 

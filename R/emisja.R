@@ -9,8 +9,10 @@
 #' @param sub character
 #' @return
 #' @import dplyr tidyverse ggplot2 magrittr
-#' @export
 #' @examples
+#'
+#' @export
+
 
 emisja<- function(dane = input,
                   kategoria = "Passenger Cars",

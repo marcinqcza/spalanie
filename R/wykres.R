@@ -7,9 +7,9 @@
 #' @param z double
 #' @param out double
 #' @import dplyr tidyverse ggplot2 magrittr
-#' @export
-#'
 #' @examples
+#'
+#' @export
 
 wykres <- function(out,x,y,z) {
 

@@ -35,3 +35,6 @@ emisja(
 \description{
 Obliczenia emisji spalin
 }
+\examples{
+
+}

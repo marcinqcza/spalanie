@@ -21,3 +21,6 @@ plot
 \description{
 Wizualizacja danych - wykres
 }
+\examples{
+
+}

@@ -4,23 +4,20 @@
 \alias{wykres}
 \title{Wizualizacja danych - wykres}
 \usage{
-wykres(out, x, y, z)
+wykres(x, dane = out, y = .data$Emisja, z = .data$Nat)
 }
 \arguments{
-\item{out}{double}
+\item{x}{double - dowolny wybrany wskaznik przez uzytkownika}
 
-\item{x}{double}
+\item{y}{double - obliczona emisja spalin}
 
-\item{y}{double}
+\item{z}{double - natezenie ruchu}
 
-\item{z}{double}
+\item{out}{double - zestawienie wyników otrzymanych z funkcji 'emisja'}
 }
 \value{
 plot
 }
 \description{
 Wizualizacja danych - wykres
-}
-\examples{
-
 }

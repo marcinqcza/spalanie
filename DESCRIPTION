@@ -1,11 +1,11 @@
 Package: spalanie
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Wprowadzenie do emisji spalin
 Version: 0.1.0
 Authors@R:
     person("Marcin", "Kucza", email = "marcinqcza@student.agh.edu.pl", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Pakiet 'spalanie' zostal stworzy na potrzeby przedmiotu Metody inwentaryzacji i szacowania emisji. 
+    Jego glownym przeznaczeniem jest obliczania emisji spalni generowanych przez pojazdy
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

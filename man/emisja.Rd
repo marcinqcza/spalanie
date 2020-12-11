@@ -15,26 +15,23 @@ emisja(
 )
 }
 \arguments{
-\item{dane}{dataframe}
+\item{dane}{dataframe - dane wejsciowe}
 
-\item{kategoria}{character}
+\item{kategoria}{character - kategoria pojazdu - Passenger Cars,Light Commercial Vehicles,Heavy Duty Trucks,Buses,L-Category}
 
-\item{paliwo}{character}
+\item{paliwo}{character - Petrol, Diesel, Petrol Hybrid, LPG Bifuel ~ LPG, LPG Bifuel ~ Petrol, CNG Bifuel ~ CNG, CNG Bifuel ~ Petrol, CNG, Biodiesel}
 
-\item{typ}{character}
+\item{typ}{character - segment pojazdu - Mini, Small, Medium, Large-SUV-Executive, itp}
 
-\item{stan}{character}
+\item{stan}{character - norma dopuszczalnych emisji spalin - Euro 1, Euro 2, Euro 3, Euro 4, Euro 5, Euro 6, itp}
 
-\item{tech}{character}
+\item{tech}{character - technologia ograniczenia spalin - GDI, PFI, GDI+GPF, DPF, DPF+SCR, LNT+DPF, SCR, EGR}
 
-\item{sub}{character}
+\item{sub}{character - rodzaj emitowanego zanieczyszczenia - CO, NOx, VOC, PM Exhaust, EC, CH4, NH3, N2O}
 }
 \value{
 
 }
 \description{
 Obliczenia emisji spalin
-}
-\examples{
-
 }

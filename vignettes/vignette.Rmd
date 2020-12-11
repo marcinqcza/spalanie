@@ -1,27 +1,28 @@
 ---
-title: "Wprowadzenie do emisja spalin"
+title: "Wprowadzenie do emisji spalin"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Wprowadzenie do emisja spalin}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
+ %\VignetteIndexEntry{Wprowadzenie do emisji spalin}
+ %\VignetteEncoding{UTF-8}
+ %\VignetteEngine{knitr::rmarkdown}
 ---
-
+  
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
-)
+) 
 ```
 
 ```{r dodatkowe ustawienia, include=FALSE, results='hide'}
-#library(spalanie)
+library(spalanie)
 ```
 
+
 ***
-
+  
 **Marcin Kucza**
-
+  
 **AGH** Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, Wydział Geodezji Górniczej i Inżynierii Środowiska, Geoinformacja, III rok.
 
 **e-mail:** *[marcinqcza@student.agh.edu.pl](marcinqcza@student.agh.edu.pl)*.
@@ -29,23 +30,51 @@ knitr::opts_chunk$set(
 ***
 # Wprowadzenia
 ***
-
-
+Pakiet 'spalanie' powstal na potrzeby przedmiotu  Metody inwentaryzacji i szacowania emisji. Jego celem jest obliczanie emisji spalin generowanych przez rózne rodzaje pojazdów i silników sie w nich znajdujacych. Pakiet posiada juz dane dzieki którym mozna w szybki sposób sprawdzic jego dzialanie poprzez obliczenie emisji funkcja 'emisja' i zaprezentowanie otrzymanych wyników 'wykres'
+  
 ***
 # Instalacja pakietu
 ***
-
-Zwiazku z tym ze repozytorium pakietu znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet devtools, który pobierze repozyroriu emisja i zainstaluje pakiet na twoim komputerze.
+  
+Zwiazku z tym ze repozytorium pakietu 'spalanie' znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet devtools, który pobierze repozyroriu spalanie i zainstaluje pakiet na twoim komputerze.
 
 ```{r setup, eval=FALSE}
 knitr::opts_chunk$set(eval = FALSE, include = FALSE)
-# instalacja potrzebnego pakietu devtools
+#instalacja potrzebnego pakietu devtools
 if(!require(devtools)) {install.packages("devtools"); require(devtools)}
-# instalacja pakietu emisja
+#instalacja pakietu spalanie
 devtools::install_github("")
-library(emisja)
+library(spalanie)
+```
+
+W celu poprawnego dzialania pakietu zalecne sie wczytanie nastepujacych pakietow:
+
+```{r, results='hide'}
+library(devtools)
+library(dplyr)
+library(ggplot2)
+library(magrittr)
+library(tidyverse)
+library(base)
+library(stats)
+library(rlang)
 ```
 
 ***
-# Wizualizacja obliczonych wyników
+# Obliczenie emisji spalin (emisja)
 ***
+W celu obliczenia emisji spalin stosujemy fukcje 'emisja'. Dane tej funkcji sa wpisane domyslnie ale w kazdej chwili uzytkownik moze je samodzielnie wyselekcjonować. Aby uzyskac wiecej informacji o funkcji uzyj polecenie:
+
+```{r echo=TRUE}
+?spalanie::emisja()
+```
+
+
+***
+# Wizualizacja obliczonych wyników (wykres)
+***
+Wizualizacji otrzymanych wyników prezentuje fukcja 'wykres'. Aby przedstawic dane w formie garficznej trzeba wybrac jedne wskaznik (UWAGA!!! - wskaznik musi byc typy character).Aby uzyskac wiecej informacji o funkcji uzyj polecenie:
+
+```{r echo=TRUE}
+?spalanie::wykres()
+```

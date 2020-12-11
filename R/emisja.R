@@ -7,6 +7,11 @@
 #' @param stan character - norma dopuszczalnych emisji spalin - Euro 1, Euro 2, Euro 3, Euro 4, Euro 5, Euro 6, itp
 #' @param tech character - technologia ograniczenia spalin - GDI, PFI, GDI+GPF, DPF, DPF+SCR, LNT+DPF, SCR, EGR
 #' @param sub character - rodzaj emitowanego zanieczyszczenia - CO, NOx, VOC, PM Exhaust, EC, CH4, NH3, N2O
+#'
+#' @details Wzor do obliczen emisji:
+#'  Emisja = Nat x ((Alpha  x Procent^2 + Beta x Procent + Gamma + (Delta/Procent)) /
+#'  (Epsilon x Procent^2 + Zita x Procent + Hta) x (1- Reduction))
+#'
 #' @return
 #' @import dplyr tidyverse ggplot2 magrittr
 #' @export

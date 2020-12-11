@@ -35,3 +35,8 @@ emisja(
 \description{
 Obliczenia emisji spalin
 }
+\details{
+Wzor do obliczen emisji:
+ Emisja = Nat x ((Alpha  x Procent^2 + Beta x Procent + Gamma + (Delta/Procent)) /
+ (Epsilon x Procent^2 + Zita x Procent + Hta) x (1- Reduction))
+}

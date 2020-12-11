@@ -33,7 +33,7 @@ wykres <- function(x,
     geom_point(aes(color = !!z)) +
     scale_color_gradient(low = "green", high = "red")+
     theme(legend.position = "top") +
-    ggtitle("Porównanie wybranego wskaźnika do emisje spalin")+
+    ggtitle("Porównanie wybranego wskaźnika do emisji spalin")+
     theme_bw() -> wyk
 
     return(wyk)

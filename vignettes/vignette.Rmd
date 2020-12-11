@@ -39,11 +39,10 @@ Pakiet 'spalanie' powstal na potrzeby przedmiotu  Metody inwentaryzacji i szacow
 Zwiazku z tym ze repozytorium pakietu 'spalanie' znajduje sie na portalu [github](https://github.com/) potrzebny jest również pakiet devtools, który pobierze repozyroriu spalanie i zainstaluje pakiet na twoim komputerze.
 
 ```{r setup, eval=FALSE}
-knitr::opts_chunk$set(eval = FALSE, include = FALSE)
 #instalacja potrzebnego pakietu devtools
 if(!require(devtools)) {install.packages("devtools"); require(devtools)}
 #instalacja pakietu spalanie
-devtools::install_github("")
+devtools::install_github("marcinqcza/spalanie")
 library(spalanie)
 ```
 

@@ -1,25 +1,32 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # Spalanie
 
-Pakiet 'spalanie' zostal stworzy na potrzeby przedmiotu Metody inwentaryzacji i szacowania emisji. Jego glownym przeznaczeniem jest obliczania emisji spalni generowanych przez pojazdy.
-Otrzymane wyniki mozna zaprezentowac na wykresie który jest dolaczony do stworzonego pakietu.
+Pakiet ‘spalanie’ zostal stworzy na potrzeby przedmiotu Metody
+inwentaryzacji i szacowania emisji. Jego glownym przeznaczeniem jest
+obliczania emisji spalni generowanych przez pojazdy. Otrzymane wyniki
+mozna zaprezentowac na wykresie który jest dolaczony do stworzonego
+pakietu.
 
 ## Instalacja z winietą
 
-```{r setup, eval=FALSE}
-knitr::opts_chunk$set(eval = FALSE, include = FALSE)
+``` r
 # instalacja potrzebnego pakietu devtools
 if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 # instalacja pakietu spalanie
-install_github("", force = T, build_vignettes = T)
+install_github("marcinqcza/spalanie", force = T, build_vignettes = T)
 library(spalanie)
 ```
 
-## Przykladowe zastosowanie 
+## Przykladowe zastosowanie
 
-Pakiet zawiera pliki danych 'input' i 'wskazniki' które umozliwiaja latwiejsze uzycie jego mozliowsci. Funkcja 'emisja' uzywa domyslnych danych natomiast prezentacja wyników 'wykres' nalezy wpisac jaki wskaznik chcemy porównac do natezenia i obliczonej emisji.
+Pakiet zawiera pliki danych ‘input’ i ‘wskazniki’ które umozliwiaja
+latwiejsze uzycie jego mozliowsci. Funkcja ‘emisja’ uzywa domyslnych
+danych natomiast prezentacja wyników ‘wykres’ nalezy wpisac jaki
+wskaznik chcemy porównac do natezenia i obliczonej emisji.
 
-```{r example, eval=FALSE}
+``` r
 emisja()
 wykres(Fuel)
 ```
-

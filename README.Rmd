@@ -21,11 +21,10 @@ Otrzymane wyniki mozna zaprezentowac na wykresie który jest dolaczony do stworz
 ## Instalacja z winietą
 
 ```{r setup, eval=FALSE}
-knitr::opts_chunk$set(eval = FALSE, include = FALSE)
 # instalacja potrzebnego pakietu devtools
 if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 # instalacja pakietu spalanie
-install_github("", force = T, build_vignettes = T)
+install_github("marcinqcza/spalanie", force = T, build_vignettes = T)
 library(spalanie)
 ```
 
